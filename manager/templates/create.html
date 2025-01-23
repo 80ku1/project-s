@@ -1,0 +1,14 @@
+{% extends 'blank.html' %}
+
+{% block content %}
+
+{% if request.path == "/create/" %} 
+<p><b>This is from /create/ </b> </p> 
+{% endif %}
+
+<form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    {{form.as_p}}
+<button type="submit"> Click </button>
+</form>
+{% endblock %}
