@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def list(request):
-    return render(request, 'Blog/post.html',{})
+def home(request):
+    return render(request, 'blog/post.html',{})
