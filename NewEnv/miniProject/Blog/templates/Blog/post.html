@@ -12,6 +12,9 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </section>
     </article>
+    
 {% endfor %}
+
+<a href="{% url 'home' %}">Go to Home</a>
 
 {% endblock %}
